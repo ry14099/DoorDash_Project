@@ -82,4 +82,83 @@ Forecast & Model Evaluation
 11. Model Evaluation
 12. AI Prediction Insights
 
-Dashb
+Dashboard 主要呈現：
+
+* Quarterly business performance
+* QoQ / YoY growth
+* Correlation relationships
+* Forecast results
+* Model evaluation
+* AI prediction insights
+
+## Time Series Forecasting
+
+本專題比較兩種時間序列模型：
+
+### ARIMA
+
+使用 ARIMA(1,1,0) 分別預測：
+
+* Revenue
+* Total Orders
+* Marketplace GOV
+* Adjusted EBITDA
+
+### Prophet
+
+使用 Prophet 進行相同四項指標的時間序列預測。
+
+模型評估採用：
+
+* MAE
+* RMSE
+
+並使用最後 **4 季資料作為測試集**。
+
+## Model Evaluation
+
+模型比較結果顯示，不同營運指標的最佳模型並不完全相同。
+
+* Revenue：ARIMA 的 MAE / RMSE 較低
+* Total Orders：Prophet 的 MAE / RMSE 較低
+* Marketplace GOV：Prophet 的 MAE / RMSE 較低
+* Adjusted EBITDA：Prophet 的 MAE / RMSE 較低
+
+由於本研究僅使用 14 季資料，模型評估結果主要反映目前資料期間與模型設定下的表現，因此預測結果應作為趨勢分析與決策參考，而非確定性的未來結果。
+
+## Project Structure
+
+```text
+DoorDash_Project/
+│
+├── .gitignore
+├── README.md
+├── DoorDash_Dashboard.pbix
+│
+└── src/
+    ├── get_filings.py
+    ├── prepare_quarterly_data.py
+    ├── growth_analysis.py
+    ├── correlation_analysis.py
+    ├── analyze_data.py
+    ├── prediction.py
+    ├── extract_q4_metrics.py
+    └── data_collection.py
+```
+
+## Tools & Technologies
+
+| Category              | Tools                     |
+| --------------------- | ------------------------- |
+| Programming           | Python                    |
+| Data Collection       | SEC EDGAR                 |
+| Data Processing       | pandas, NumPy             |
+| Statistical Analysis  | statsmodels, scikit-learn |
+| Forecasting           | ARIMA, Prophet            |
+| Visualization         | matplotlib                |
+| Business Intelligence | Power BI                  |
+| Version Control       | Git / GitHub              |
+
+## Project Objective
+
+本專題希望透過公開企業資料，建立一套從 **資料擷取 → 資料分析 → 商業視覺化 → 時間序列預測 → 模型評估** 的完整分析流程，了解 DoorDash 的營運表現與未來趨勢。
