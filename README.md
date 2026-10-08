@@ -69,27 +69,27 @@ Forecast & Model Evaluation
 
 本專題建立 12 頁 Power BI 報告，涵蓋：
 
-1. Executive Overview
-2. Business Performance
-3. Growth Analysis
-4. Revenue & Total Orders Relationship
-5. Revenue & Marketplace GOV Relationship
-6. Revenue & Adjusted EBITDA Relationship
-7. Data Model Overview
-8. Data Model & Relationships
-9. AI & Prediction Overview
-10. Forecast Results
-11. Model Evaluation
-12. AI Prediction Insights
+1. Executive Overview 精簡概述
+2. Business Performance 經營績效
+3. Growth Analysis 成長曲線分析
+4. Revenue & Total Orders Relationship 營收與總訂單量之關聯
+5. Revenue & Marketplace GOV Relationship 營收與平台市場總交易額之關聯
+6. Revenue & Adjusted EBITDA Relationship 營收與稅前息前折舊攤銷前獲利之關聯
+7. Data Model Overview 資料模型概覽
+8. Data Model & Relationships 資料模型之關聯
+9. AI & Prediction Overview 預測式AI概覽
+10. Forecast Results 預測結果
+11. Model Evaluation 模型評估
+12. AI Prediction Insights AI預測洞察
 
 Dashboard 主要呈現：
 
-* Quarterly business performance
-* QoQ / YoY growth
-* Correlation relationships
-* Forecast results
-* Model evaluation
-* AI prediction insights
+* Quarterly business performance 季度業務績效
+* QoQ / YoY growth 季增率/年增率
+* Correlation relationships 相關關係
+* Forecast results 預測結果
+* Model evaluation 模型評估
+* AI prediction insights AI預測洞察
 
 ## Time Series Forecasting
 
@@ -99,10 +99,10 @@ Dashboard 主要呈現：
 
 使用 ARIMA(1,1,0) 分別預測：
 
-* Revenue
-* Total Orders
-* Marketplace GOV
-* Adjusted EBITDA
+* Total Orders 總訂單量
+* Marketplace GOV 平台市場總交易額
+* Revenue 營業收入
+* Adjusted EBITDA 稅前息前折舊攤銷前獲利
 
 ### Prophet
 
