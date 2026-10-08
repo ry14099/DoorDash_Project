@@ -8,10 +8,10 @@
 
 ### Analysis Metrics
 
-* Total Orders
-* Marketplace GOV
-* Revenue
-* Adjusted EBITDA
+* Total Orders 總訂單量
+* Marketplace GOV 平台市場總交易額
+* Revenue 營業收入
+* Adjusted EBITDA 稅前息前折舊攤銷前獲利
 
 資料期間為 **2023 Q1 – 2026 Q2，共 14 季**。
 
